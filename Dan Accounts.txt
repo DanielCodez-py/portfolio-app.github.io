@@ -1,0 +1,8 @@
+github: 
+username: Danielcodez-py
+password: danCodez4luv
+
+coursera :
+email: oradaniel4real@gmail.com
+password: great4c00l$
+
