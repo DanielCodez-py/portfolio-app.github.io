@@ -1,3 +1,4 @@
+/* Universal Styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-weight: 500;
 }
 
+/** Fonts Styling **/
 h1 {
     font-size: 3em;
 }
@@ -22,6 +24,8 @@ body {
     margin: 20px;
 
 }
+
+/* Header Styling */j
 
 .doc.header {
     width: 90vw;
