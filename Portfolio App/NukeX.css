@@ -1,0 +1,554 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #262626;
+    transition-property: all;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(static/MavenPro-Medium.ttf);
+}
+
+/** Fonts Styling **/
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Breakpoint */
+
+/** General Section Styles **/
+section {
+    overflow: hidden;
+    border: 1px solid #00caa5; 
+    width: 100vw; 
+    height: 100vh;
+}
+/* Breakpoint */
+
+
+/* Intro Page Styles */
+.prologue {
+    margin: 0;  
+    background-image: url("png\'s/Intro-bg.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bg-tint {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.741), #00000080, #00000080, #00000041);
+    z-index: -10;
+}
+
+.textbox {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    display: inline;
+    top: 25vh;
+    left: 10vh ;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.scroll-text {
+    display: flex;
+    max-width: 45vw;
+    height: 20vh;
+    padding: 5vh 5vw 0 0;
+}
+
+.textbox p {
+    font-weight: 200;
+    color: #01f5c8;
+    display: inline;
+    max-width: 250px;
+    height: 10vh;
+    font-size: 1.2em;
+}
+
+a[class="anime"] {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #01f5c8;
+    max-width: 50px;
+    min-width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    transition: ease-in-out;
+}
+
+a[class="anime"] span {
+    padding: 0;
+}
+
+a[class="anime"]:hover {
+    box-shadow: 0 0 5px #01f5c8;
+}
+
+a[class="anime"] img{
+    margin-bottom: -5px;
+}
+
+.textbox h3:first-child {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/* Breakpoint of the Intro Page Styles */
+
+
+/* About Page Styles 
+->   Navigation Bar Styles */
+
+nav.nav-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    margin-top: -5;
+}
+
+ul {
+    width: 70%;
+    height: 4em;
+    border-radius: 0 0 15px 15px;
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00FFEF;
+    border-top: none;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 1.5em;
+    margin: 5px 10px 5px 10px;
+    text-transform: capitalize;
+    color: #00E8FF;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+ul li::first-letter {
+    font-size: 40px;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul li:hover {
+    color: #00ccdf;
+    text-shadow: 2px 2px 2px #00cddf6b;
+}
+
+
+
+/* Breakpoint for Navigation Bar Styles */
+
+/* Continuation of About Page Styles */
+.about {
+    overflow: hidden;
+    position: relative;
+    background: #262626;
+}
+
+h1.bg-txt {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    text-shadow: -5px 5px 4px #00000056;
+    font-size: 13.5em;
+    color: #2b2b2bd0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00eaff75;
+    z-index: 1;
+    letter-spacing: 15px;
+}
+
+aside.top-text, aside.bottom-text  {
+    padding: 20px;
+    min-width: 5%;
+    border: 2px solid #00FFEF;
+    color: #00FFEF;
+    border-radius: 20px;
+    background: #57575788;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.top-text { 
+    width: 40%;
+    top: 15%;
+    right: 14%;
+}
+
+.bottom-text {
+    bottom: 15%;
+    left: 10%;
+}
+
+.bottom-text #a-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+aside h3 {
+    display: inline;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+aside h3 span {
+    color: #00d0c2;
+    font-size: 1.5em;
+}
+
+aside.circle-grid {
+    z-index: 1;
+    display: inline;
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+}
+
+.about aside div {
+    display: block;
+    height: 30%;
+}
+
+.bottom-content-div {
+    margin: 20px;
+    width: 360px;
+}
+
+.top-content-div {
+    margin-left: 30px;
+    width: 90% !important;
+}
+
+aside.Ellipse {
+    display: inline;
+    position: absolute;
+    bottom: -40%;
+    right: -15%;
+    z-index: 1;
+}
+
+/* Breakpoint of the About Page Styles */
+
+/* Skills Page Styles */
+section.skills {
+    color: #00FFEF;
+    display: flex;
+    flex-direction: column;
+    background: #262626;
+    justify-content: center;
+    align-items: center;
+}
+
+section.skills * {
+    font-weight: 400;
+}
+
+section.skills .skill-header {
+    width: 55%; 
+    text-align: center;
+}
+
+section.skills .skill-header h2 bold {
+    color: #00d0c2;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+section.skills h2 {
+    display: inline;
+    width: 60%;
+}
+
+section.skills span#a-link {
+    display: inline-flex;
+
+}
+
+div.skill-container {
+    margin-top: 30px;
+    margin-bottom: -40px;
+    width: 100vw;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.skill-container div{
+    padding: 20px;
+    width: 23%;
+    box-shadow: 2px 2px 5px #00000085;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    background: #1a1a1aa6;
+    border-radius: 20px;
+}
+
+div.skill-container div h3 {
+    text-transform: uppercase;
+}
+
+div.skill-container div p {
+    margin-top: 65px;
+    display: block;
+    font-size: 2em;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #00eaff82;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+div.skill-container div p span {
+     font-size: 3em;
+}
+
+/* Works Page Styles */
+section.works {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #262626;
+    justify-content: center;
+}
+
+section.works div.works-header h2 {
+    color: #00edff; 
+}
+
+section.works div {
+    background: #101010;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    width: 40vw;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+section.works div #shadowed {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+section.works div h3, section.works div p {
+    z-index: 10;
+}
+
+section.works div.works-header {
+    width: 40%;
+    background: none;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.works div.work-2 {
+    width: 40%;
+}
+
+section.works div.work-3 {
+    background-image: url("png\'s/Picture.png");
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section.works div.work-3 p {
+    font-weight: 300;
+    width: 80%;
+    text-align: center;
+}
+
+section.works div.work-3  a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+section.works div span[class] {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.713);
+    position: absolute;
+}
+
+
+
+/* Contacts Page Styles */
+section.contacts {
+    position: relative;
+    overflow-y: visible;
+    background: #262626;
+    display: flex;
+    flex-direction: row;
+    color: #00edff;
+    padding: 50px;
+}
+
+section.contacts form#form {
+    padding: 25px;
+    margin: 50px;
+    width: 71%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    border: 2px solid #00edff;
+    border-radius: 20px;
+}
+
+form#form label {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+form#form input {
+    margin-top: 2px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #00000069;
+    border: 2px solid #00edff;
+}
+
+form#form button {
+    display: inline-block;
+    margin-top: 2px;
+    width: 8em;
+    font-size: 1.3em;
+    height: 2em;
+    background: transparent;
+    color: #00edff;
+    border: 2px solid #00E8FF;
+    border-radius: 6px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+form#form button:hover {
+    background: #00e8ff;
+    color: #262626;
+}
+
+form#form textarea {
+    margin-top: 2px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    max-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #00000069;
+    border: 2px solid #00edff;
+}
+
+
+section.contacts footer.footer {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    /* height: 10vh; */
+    margin: 20px 10px 20px 50px;
+}
+
+section.contacts div.header-text {
+    width: 49vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+section.contacts div.header-text h2 {
+    font-weight: 500;
+    margin: 40px 40px 40px 0;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00edff;
+    font-size: 7em;
+}
+
+section.contacts div.form-container {
+    padding: 20px;
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+}
+
+footer.footer h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+footer.footer p {
+    font-weight: 200;
+}
